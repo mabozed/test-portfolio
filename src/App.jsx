@@ -26,9 +26,9 @@ function App() {
         <div className={theme}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/test-portfolio/Resume" element={<Resume />} />
-            <Route path="/test-portfolio/Work" element={<Work />} />
-            <Route path="/test-portfolio/Contact" element={<Contact />} />
+            <Route path="/test-portfolio/resume" element={<Resume />} />
+            <Route path="/test-portfolio/work" element={<Work />} />
+            <Route path="/test-portfolio/contact" element={<Contact />} />
           </Routes>
         </div>
       </ThemeContext.Provider>
