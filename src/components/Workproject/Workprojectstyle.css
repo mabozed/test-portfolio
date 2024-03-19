@@ -1,0 +1,109 @@
+.work {
+  width: 60vw;
+  height: 800px;
+  border: 3px solid rgb(175, 219, 121);
+  border-radius: 30px;
+}
+.work .aboutline {
+  width: 38vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+  padding-top: 18px;
+}
+.work .aboutline h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.work .aboutline .line {
+  width: 14vw;
+  height: 2px;
+  background-color: rgb(175, 219, 121);
+}
+.work .projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.work .projects .one {
+  width: 90%;
+  background-color: rgb(175, 219, 121);
+  border-radius: 15px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+.projects .one img {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.work .projects .one:hover {
+  cursor: pointer;
+  background-color: rgb(218, 238, 193);
+  opacity: 0.7;
+}
+.work .projects a {
+  text-decoration: none;
+  color: black;
+}
+.work .projects .one p {
+  font-size: 1.02rem;
+  font-weight: 800;
+  padding-left: 10px;
+}
+.work .certificate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.work .certificate img {
+  width: 30%;
+}
+.work .h1 {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 400px) {
+  .work {
+    width: 91%;
+    height: auto;
+    margin-left: 15px;
+    padding-bottom: 15px;
+  }
+  .work .aboutline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .work .aboutline .line {
+    width: 120px;
+  }
+  .work .projects {
+    width: 100%;
+    flex-direction: column;
+  }
+  .work .projects .one {
+    margin-bottom: 15px;
+  }
+  .work .certificate {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+  }
+  .work .certificate img {
+    width: 90%;
+  }
+}

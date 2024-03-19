@@ -1,0 +1,17 @@
+.componentFlex{
+    max-width: 100vw;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 150px; 
+    
+}
+
+
+@media screen and (max-width:400px){
+    .componentFlex{
+        max-width: 100vw;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+}

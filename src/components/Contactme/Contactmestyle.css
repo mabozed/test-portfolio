@@ -1,0 +1,155 @@
+.contactme {
+  width: 60vw;
+  height: 800px;
+  border: 3px solid rgb(175, 219, 121);
+  border-radius: 30px;
+}
+.contactme .aboutline {
+  width: 38vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+  padding-top: 18px;
+}
+.contactme .aboutline .line {
+  width: 14vw;
+  height: 2px;
+  background-color: rgb(175, 219, 121);
+}
+.contactme .talkme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+.contactme .talkme .phone {
+  width: 45%;
+  background-color: rgb(175, 219, 121);
+  padding: 25px;
+  border-radius: 30px;
+  height: 150px;
+  text-align: center;
+}
+.contactme .talkme .phone p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.contactme .talkme .phone a {
+  text-decoration: none;
+  color: rgb(175, 219, 121);
+  background-color: black;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 15px;
+  width: 7.3vw;
+}
+.contactme .talkme .phone a:hover {
+  background-color: rgb(218, 238, 193);
+  color: black;
+}
+.contactme .talkme .phone a i {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+
+.contactme .form {
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.contactme .form p {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.contactme .form input {
+  width: 40%;
+  padding: 10px;
+  border: 3px solid rgb(175, 219, 121);
+}
+
+.contactme .form .input3 {
+  width: 50%;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
+}
+.contactme .form input::placeholder {
+  color: black;
+  font-size: 1.02rem;
+}
+.contactme .send {
+  width: 14.3vw;
+  height: 50px;
+  border: none;
+  background-color: rgb(175, 219, 121);
+  color: black;
+  font-size: 1.02rem;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 15px;
+}
+.contactme .send:hover {
+  background-color: rgb(218, 238, 193);
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .contactme {
+    width: 91%;
+    height: auto;
+    margin-left: 15px;
+    padding-bottom: 20px;
+  }
+  .contactme .aboutline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .contactme .aboutline h1 {
+    font-size: 30px;
+  }
+  .contactme .aboutline .line {
+    width: 120px;
+  }
+  .contactme .talkme {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contactme .talkme .phone {
+    width: 95%;
+    height: 160px;
+  }
+  .contactme .form {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    margin-left: 10px;
+  }
+  .contactme .form p {
+    width: 95%;
+  }
+  .contactme .form input {
+    width: 90%;
+  }
+  .contactme .form .input3 {
+    width: 90%;
+  }
+  .contactme .send {
+    margin-bottom: 10px;
+  }
+}
