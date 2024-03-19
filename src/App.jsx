@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home/Home'
 import Resume from './pages/Resume/Resume'
@@ -6,6 +6,28 @@ import Work from './pages/Work/Work'
 import Contact from './pages/Contact/Contact'
 import { ThemeContext } from './Context/ThemeContext'
 import { useEffect, useState } from 'react'
+
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/contact',
+      element: <Contact />,
+    },
+    {
+      path: '/resume',
+      element: <Resume />,
+    },
+    {
+      path: '/work',
+      element: <Work />,
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+)
 
 function App() {
   const [theme, setTheme] = useState(
@@ -24,12 +46,7 @@ function App() {
     <>
       <ThemeContext.Provider value={{ theme, ToggleChangeMode }}>
         <div className={theme}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <RouterProvider router={router} />
         </div>
       </ThemeContext.Provider>
     </>
