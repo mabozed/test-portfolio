@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       element: <Work />,
     },
   ],
-  { basename: import.meta.env.BASE_URL }
+  { basename: '/test-portfolio/' }
 )
 
 function App() {
